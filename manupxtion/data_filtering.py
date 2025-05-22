@@ -7,3 +7,6 @@ jobs_data = [
 ]
 
 print(list(filter(lambda job:job['remote'],jobs_data)))
+
+print(list(filter(lambda job:job['remote'] and 'python' in job['job_skills'] ,jobs_data)))
+
